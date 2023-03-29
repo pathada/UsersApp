@@ -9,9 +9,18 @@ import Foundation
 
 struct APIManager {
     
-   static func makeAPIRequestCall<T: Codable>(url:URL, httpMethod:String, completionHandler: @escaping (Result<T, Error>)-> Void){
+   static func makeAPIRequestCall<T: Codable>(url:URL, httpMethod:String, bodyData: Data?, completionHandler: @escaping (Result<T, Error>)-> Void){
         
-        URLSession.shared.dataTask(with: url) { data, response, error in
+       var request = URLRequest(url: url)
+           request.httpMethod = httpMethod
+           
+           if let bodyData = bodyData {
+               request.httpBody = bodyData
+               request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+           }
+       print("Url: \(request.url!), body: \(bodyData!)")
+       
+       URLSession.shared.dataTask(with: request) { data, response, error in
             if let error = error{
                 completionHandler(.failure(error))
                 return
