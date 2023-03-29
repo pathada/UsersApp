@@ -11,33 +11,55 @@ import Foundation
 //All Users
 
 struct AllUsers:Codable {
-    var users:[Users]
+    let users:[SingleUser]
 }
 
-struct Users:Codable {
-    var id: Int?
-    var username: String?
-    var firstName:String?
-    var lastName:String?
-    var maidenName:String?
-    var email:String?
-    var image:String?
-    var gender:String?
-    var age:Int?
-    var phone:String?
-    var birthDate:String?
-    var bloodGroup:String?
-    var address:Address
+//SingleUser
+struct SingleUser:Codable {
+    let id: Int?
+    let username: String?
+    let firstName:String?
+    let lastName:String?
+    let maidenName:String?
+    let email:String?
+    let image:String?
+    let gender:String?
+    let age:Int?
+    let phone:String?
+    let birthDate:String?
+    let bloodGroup:String?
+    let address:AddressInfo
+    let bank:BankInfo
+    let company:CompanyInfo
 }
 
-struct Address:Codable {
-    var address:String?
-    var city:Int?
-    var postalCode:String?
-    var state:String?
-    var coordinates:Coordinates
+struct AddressInfo:Codable {
+    let address:String?
+    let city:Int?
+    let postalCode:String?
+    let state:String?
+    let coordinates:CoordinatesInfo
 }
-struct Coordinates:Codable {
-    var lat:Double?
-    var lng:Double?
+struct CoordinatesInfo:Codable {
+    let lat:Double?
+    let lng:Double?
 }
+struct BankInfo:Codable {
+    let cardExpire:String?
+    let cardNumber:String?
+    let cardType:String?
+    let currency:String?
+    let iban:String?
+}
+struct CompanyInfo:Codable {
+    let name:String?
+    let title:Int?
+    let address:String?
+    let city:Int?
+    let postalCode:String?
+    let state:String?
+    let coordinates:CoordinatesInfo
+    let department:String?
+    
+}
+
