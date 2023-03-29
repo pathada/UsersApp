@@ -30,14 +30,14 @@ struct Users:Codable {
     var address:Address
 }
 
-struct Address {
+struct Address:Codable {
     var address:String?
     var city:Int?
     var postalCode:String?
     var state:String?
     var coordinates:Coordinates
 }
-struct Coordinates {
+struct Coordinates:Codable {
     var lat:Double?
     var lng:Double?
 }
