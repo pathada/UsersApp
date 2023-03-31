@@ -6,19 +6,22 @@
 //
 
 import Foundation
+import UIKit
 
-struct APIManager {
+class APIManager {
     
-   static func makeAPIRequestCall<T: Codable>(url:URL, httpMethod:String, bodyData: Data?, completionHandler: @escaping (Result<T, Error>)-> Void){
+    static let shared = APIManager()
+
+    /// This is to make API network call
+    func makeAPIRequestCall<T: Codable>(url:URL, httpMethod: HTTPMethod, bodyData: Data?, completionHandler: @escaping (Result<T, Error>)-> Void){
         
        var request = URLRequest(url: url)
-           request.httpMethod = httpMethod
+       request.httpMethod = httpMethod.rawValue
            
            if let bodyData = bodyData {
                request.httpBody = bodyData
                request.setValue("application/json", forHTTPHeaderField: "Content-Type")
            }
-       print("Url: \(request.url!), body: \(bodyData!)")
        
        URLSession.shared.dataTask(with: request) { data, response, error in
             if let error = error{
@@ -42,6 +45,28 @@ struct APIManager {
             }
         }.resume()
         
+    }
+    
+    func downloadImage(_ urlString: String, completion: @escaping (_ image: UIImage?, _ urlString: String?) -> ()) {
+       guard let url = URL(string: urlString) else {
+          completion(nil, urlString)
+          return
+       }
+       
+       URLSession.shared.dataTask(with: url) { (data, response, error) in
+          // handle errors
+          guard error == nil, let data = data else {
+             completion(nil, urlString)
+             return
+          }
+          
+          // decode the image
+          let image = UIImage(data: data)
+           DispatchQueue.main.async {
+               
+               completion(image, urlString)
+           }
+       }.resume()
     }
     
 }

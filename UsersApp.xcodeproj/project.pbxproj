@@ -20,6 +20,20 @@
 		210636C629D4B7DB0015F394 /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210636C529D4B7DB0015F394 /* APIRequest.swift */; };
 		210636CA29D4E1290015F394 /* AllUsersResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210636C929D4E1290015F394 /* AllUsersResponse.swift */; };
 		210636CC29D4E1350015F394 /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210636CB29D4E1350015F394 /* LoginResponse.swift */; };
+		210636D229D5EC150015F394 /* UsersListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210636D129D5EC150015F394 /* UsersListViewController.swift */; };
+		210636D429D5EC2E0015F394 /* UsersListStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 210636D329D5EC2E0015F394 /* UsersListStoryboard.storyboard */; };
+		210636D829D5F7740015F394 /* UsersListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210636D629D5F7740015F394 /* UsersListTableViewCell.swift */; };
+		210636D929D5F7740015F394 /* UsersListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 210636D729D5F7740015F394 /* UsersListTableViewCell.xib */; };
+		210636DE29D6105F0015F394 /* LoginUserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210636DD29D6105F0015F394 /* LoginUserData.swift */; };
+		210636E029D610820015F394 /* UsersData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210636DF29D610820015F394 /* UsersData.swift */; };
+		210636E329D636B50015F394 /* UserDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210636E229D636B50015F394 /* UserDetailViewController.swift */; };
+		210636E529D636D00015F394 /* UserDetailStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 210636E429D636D00015F394 /* UserDetailStoryboard.storyboard */; };
+		210636E829D63B640015F394 /* UserImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210636E629D63B640015F394 /* UserImageTableViewCell.swift */; };
+		210636E929D63B640015F394 /* UserImageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 210636E729D63B640015F394 /* UserImageTableViewCell.xib */; };
+		210636EC29D668880015F394 /* UsernameTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210636EA29D668880015F394 /* UsernameTableViewCell.swift */; };
+		210636ED29D668880015F394 /* UsernameTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 210636EB29D668880015F394 /* UsernameTableViewCell.xib */; };
+		210636F029D669040015F394 /* UserDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210636EE29D669040015F394 /* UserDetailTableViewCell.swift */; };
+		210636F129D669040015F394 /* UserDetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 210636EF29D669040015F394 /* UserDetailTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +71,20 @@
 		210636C529D4B7DB0015F394 /* APIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
 		210636C929D4E1290015F394 /* AllUsersResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllUsersResponse.swift; sourceTree = "<group>"; };
 		210636CB29D4E1350015F394 /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
+		210636D129D5EC150015F394 /* UsersListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersListViewController.swift; sourceTree = "<group>"; };
+		210636D329D5EC2E0015F394 /* UsersListStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UsersListStoryboard.storyboard; sourceTree = "<group>"; };
+		210636D629D5F7740015F394 /* UsersListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersListTableViewCell.swift; sourceTree = "<group>"; };
+		210636D729D5F7740015F394 /* UsersListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UsersListTableViewCell.xib; sourceTree = "<group>"; };
+		210636DD29D6105F0015F394 /* LoginUserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUserData.swift; sourceTree = "<group>"; };
+		210636DF29D610820015F394 /* UsersData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersData.swift; sourceTree = "<group>"; };
+		210636E229D636B50015F394 /* UserDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailViewController.swift; sourceTree = "<group>"; };
+		210636E429D636D00015F394 /* UserDetailStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UserDetailStoryboard.storyboard; sourceTree = "<group>"; };
+		210636E629D63B640015F394 /* UserImageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserImageTableViewCell.swift; sourceTree = "<group>"; };
+		210636E729D63B640015F394 /* UserImageTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserImageTableViewCell.xib; sourceTree = "<group>"; };
+		210636EA29D668880015F394 /* UsernameTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsernameTableViewCell.swift; sourceTree = "<group>"; };
+		210636EB29D668880015F394 /* UsernameTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UsernameTableViewCell.xib; sourceTree = "<group>"; };
+		210636EE29D669040015F394 /* UserDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailTableViewCell.swift; sourceTree = "<group>"; };
+		210636EF29D669040015F394 /* UserDetailTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserDetailTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +140,8 @@
 				210636C329D4B6F20015F394 /* ConstantsFile.swift */,
 				210636C029D4B6A30015F394 /* Repository */,
 				210636BF29D4B50F0015F394 /* Login */,
+				210636D029D5EBED0015F394 /* UsersList */,
+				210636E129D636920015F394 /* UserDetail */,
 				2106369829D4B4F90015F394 /* Assets.xcassets */,
 				2106369A29D4B4F90015F394 /* LaunchScreen.storyboard */,
 				2106369D29D4B4F90015F394 /* Info.plist */,
@@ -148,6 +178,7 @@
 		210636C029D4B6A30015F394 /* Repository */ = {
 			isa = PBXGroup;
 			children = (
+				210636DC29D6103A0015F394 /* ObjectsFile */,
 				210636CD29D4E1390015F394 /* Model */,
 				210636C529D4B7DB0015F394 /* APIRequest.swift */,
 			);
@@ -161,6 +192,49 @@
 				210636CB29D4E1350015F394 /* LoginResponse.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		210636D029D5EBED0015F394 /* UsersList */ = {
+			isa = PBXGroup;
+			children = (
+				210636D129D5EC150015F394 /* UsersListViewController.swift */,
+				210636D329D5EC2E0015F394 /* UsersListStoryboard.storyboard */,
+				210636D629D5F7740015F394 /* UsersListTableViewCell.swift */,
+				210636D729D5F7740015F394 /* UsersListTableViewCell.xib */,
+			);
+			path = UsersList;
+			sourceTree = "<group>";
+		};
+		210636DC29D6103A0015F394 /* ObjectsFile */ = {
+			isa = PBXGroup;
+			children = (
+				210636DD29D6105F0015F394 /* LoginUserData.swift */,
+				210636DF29D610820015F394 /* UsersData.swift */,
+			);
+			path = ObjectsFile;
+			sourceTree = "<group>";
+		};
+		210636E129D636920015F394 /* UserDetail */ = {
+			isa = PBXGroup;
+			children = (
+				210636E229D636B50015F394 /* UserDetailViewController.swift */,
+				210636E429D636D00015F394 /* UserDetailStoryboard.storyboard */,
+				210636F229D669C40015F394 /* TableViewCells */,
+			);
+			path = UserDetail;
+			sourceTree = "<group>";
+		};
+		210636F229D669C40015F394 /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				210636E629D63B640015F394 /* UserImageTableViewCell.swift */,
+				210636E729D63B640015F394 /* UserImageTableViewCell.xib */,
+				210636EA29D668880015F394 /* UsernameTableViewCell.swift */,
+				210636EB29D668880015F394 /* UsernameTableViewCell.xib */,
+				210636EE29D669040015F394 /* UserDetailTableViewCell.swift */,
+				210636EF29D669040015F394 /* UserDetailTableViewCell.xib */,
+			);
+			path = TableViewCells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -267,9 +341,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				210636F129D669040015F394 /* UserDetailTableViewCell.xib in Resources */,
+				210636D429D5EC2E0015F394 /* UsersListStoryboard.storyboard in Resources */,
+				210636E929D63B640015F394 /* UserImageTableViewCell.xib in Resources */,
 				2106369C29D4B4F90015F394 /* LaunchScreen.storyboard in Resources */,
 				2106369929D4B4F90015F394 /* Assets.xcassets in Resources */,
+				210636E529D636D00015F394 /* UserDetailStoryboard.storyboard in Resources */,
+				210636ED29D668880015F394 /* UsernameTableViewCell.xib in Resources */,
 				2106369729D4B4F80015F394 /* Main.storyboard in Resources */,
+				210636D929D5F7740015F394 /* UsersListTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,10 +376,18 @@
 			files = (
 				2106369429D4B4F80015F394 /* LoginViewController.swift in Sources */,
 				2106369029D4B4F80015F394 /* AppDelegate.swift in Sources */,
+				210636E329D636B50015F394 /* UserDetailViewController.swift in Sources */,
 				2106369229D4B4F80015F394 /* SceneDelegate.swift in Sources */,
+				210636D829D5F7740015F394 /* UsersListTableViewCell.swift in Sources */,
 				210636C629D4B7DB0015F394 /* APIRequest.swift in Sources */,
 				210636CA29D4E1290015F394 /* AllUsersResponse.swift in Sources */,
+				210636DE29D6105F0015F394 /* LoginUserData.swift in Sources */,
+				210636D229D5EC150015F394 /* UsersListViewController.swift in Sources */,
 				210636CC29D4E1350015F394 /* LoginResponse.swift in Sources */,
+				210636E829D63B640015F394 /* UserImageTableViewCell.swift in Sources */,
+				210636E029D610820015F394 /* UsersData.swift in Sources */,
+				210636F029D669040015F394 /* UserDetailTableViewCell.swift in Sources */,
+				210636EC29D668880015F394 /* UsernameTableViewCell.swift in Sources */,
 				210636C429D4B6F20015F394 /* ConstantsFile.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
